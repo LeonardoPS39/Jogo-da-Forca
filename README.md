@@ -1,0 +1,1 @@
+Um jogo feito somente com pop-up de alert e prompt, bem simples e fácil de entender.
