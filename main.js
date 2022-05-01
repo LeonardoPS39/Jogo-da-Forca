@@ -83,6 +83,7 @@ function revelaMascara() {
         
         for(let i = 0; i < palavraSorteada.length; i++) {
             
+            
             if(palavraSorteada[i] == letraInformada) {
                 
                 mascChar = mascChar.substring(0, i) + letraInformada + mascChar.substring(i + 1)
@@ -90,9 +91,10 @@ function revelaMascara() {
                 console.log('Atualização da máscara: ' + mascChar, '\nLetra informada:' + letraInformada, '\nÍndice para verificação de cada letra: ' + i, '\nLetras já ditas anteriormente: ' + palpites)
             }
         }
-
+        
     }else {
-
+        
+        palpites = palpites.substring(0, i) + letraInformada + palpites.substring(i + 1)
         erroMostra = arrErros[errosCount]
         errosCount++
 
