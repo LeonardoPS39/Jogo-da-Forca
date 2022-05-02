@@ -1,6 +1,7 @@
 // Criação de variáveis:
 const dc = ["batman", "superman", "wonder woman","arlequina","joker"]
 var palavraSorteada
+const alfabeto = 'abcdefghijklmnopqrstuvwxyzç'
 var letraInformada
 var erroMostra = ''
 var errosCount = 0
@@ -34,6 +35,7 @@ for(let i = 0; i < palavraSorteada.length; i++) {
 alert('O tema é DC COMICS!')
 
 
+
 // O jogo roda aqui:
 for(; errosCount <= arrErros.length && countAcertos < palavraSorteada.length;) {
 
@@ -53,6 +55,7 @@ for(; errosCount <= arrErros.length && countAcertos < palavraSorteada.length;) {
 }
 
 
+
 // Funções para o jogo: 
 function revelaMascara() {
 
@@ -65,6 +68,12 @@ function revelaMascara() {
     // Verifica se tem mais de uma letra:
     if(letraInformada.length > 1) {
         alert('Digite apenas uma letra!')
+        return
+    }
+
+    // Verifica se foi digitado um caracter que não esteja no alfabeto:
+    if(!letraInformada.includes(alfabeto)) {
+        alert('Digite uma letra do alfabeto!')
         return
     }
 
