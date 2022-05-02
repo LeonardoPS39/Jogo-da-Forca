@@ -72,7 +72,7 @@ function revelaMascara() {
     }
 
     // Verifica se foi digitado um caracter que não esteja no alfabeto:
-    if(!letraInformada.includes(alfabeto)) {
+    if(!alfabeto.includes(letraInformada)) {
         alert('Digite uma letra do alfabeto!')
         return
     }
