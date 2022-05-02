@@ -105,7 +105,6 @@ function revelaMascara() {
         palpites = palpites.substring(0, i) + letraInformada + palpites.substring(i + 1)
         erroMostra = arrErros[errosCount]
         errosCount++
-
     }
 
     console.log('Erros: ' + errosCount)
